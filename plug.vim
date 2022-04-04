@@ -36,13 +36,15 @@ call plug#begin()
     Plug 'williamboman/nvim-lsp-installer' "To install LSPs
     
 
-    " Status line
-"    Plug 'vim-airline/vim-airline'
-"    Plug 'vim-airline/vim-airline-themes'
-    Plug 'nvim-lualine/lualine.nvim'
-    " If you want to have icons in your statusline choose one of these
-    Plug 'kyazdani42/nvim-web-devicons'
 
+    " Status line
+    Plug 'nvim-lualine/lualine.nvim'
+    Plug 'kyazdani42/nvim-web-devicons'
+    
+    " Add comfortable commenting functionality
     Plug 'numToStr/Comment.nvim'
     Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+
+    " Add git signs left to the buffer
+    Plug 'lewis6991/gitsigns.nvim'
 call plug#end()

@@ -79,3 +79,6 @@ nnoremap bd :bd<CR>
 
 " noh - no highlight
 noremap <esc> :noh <CR>
+
+" gitsigns
+nnoremap <leader>p :Gitsigns preview_hunk<CR>
