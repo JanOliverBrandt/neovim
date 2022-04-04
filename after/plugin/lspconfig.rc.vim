@@ -10,7 +10,7 @@ end)
 local servers = {
   "tsserver",
   "dockerls",
-  "eslint",
+--  "eslint",
   "yamlls",
   "jsonls",
   "jdtls",
