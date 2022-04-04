@@ -39,7 +39,10 @@ call plug#begin()
     " Status line
 "    Plug 'vim-airline/vim-airline'
 "    Plug 'vim-airline/vim-airline-themes'
-Plug 'nvim-lualine/lualine.nvim'
-" If you want to have icons in your statusline choose one of these
-Plug 'kyazdani42/nvim-web-devicons'
+    Plug 'nvim-lualine/lualine.nvim'
+    " If you want to have icons in your statusline choose one of these
+    Plug 'kyazdani42/nvim-web-devicons'
+
+    Plug 'numToStr/Comment.nvim'
+    Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 call plug#end()
