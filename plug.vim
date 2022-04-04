@@ -9,6 +9,7 @@ call plug#begin()
    " Basic plugins
     Plug 'preservim/nerdtree' "File Explorer Plugin
     Plug 'sonph/onehalf', { 'rtp': 'vim' } "Colorschme
+    Plug 'olimorris/onedarkpro.nvim'
     Plug 'tpope/vim-fugitive' "Git Wrapper for nvim
 
     " NerdTree plugins
@@ -36,7 +37,9 @@ call plug#begin()
     
 
     " Status line
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
-
+"    Plug 'vim-airline/vim-airline'
+"    Plug 'vim-airline/vim-airline-themes'
+Plug 'nvim-lualine/lualine.nvim'
+" If you want to have icons in your statusline choose one of these
+Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()

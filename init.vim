@@ -5,8 +5,8 @@ set termguicolors
 set hlsearch
 set smartcase
 set incsearch
-set cursorline
-set cursorcolumn
+"set cursorline
+"set cursorcolumn
 set autoindent
 set nu
 set relativenumber
@@ -28,8 +28,12 @@ syntax enable
 
 runtime ./plug.vim
 
-colorscheme onehalfdark
-
+colorscheme onedarkpro
+lua << END
+require('lualine').setup {
+  options = { theme  = 'onedarkpro' },
+}
+END
 "Set my LeaderKey as Space
 map <space> <Nop>
 let mapleader=" "
@@ -75,4 +79,3 @@ nnoremap bd :bd<CR>
 
 " noh - no highlight
 noremap <esc> :noh <CR>
-"
