@@ -12,7 +12,9 @@ call plug#begin()
     " Plug 'preservim/nerdtree' "File Explorer Plugin
     Plug 'sonph/onehalf', { 'rtp': 'vim' } "Colorschme
     Plug 'olimorris/onedarkpro.nvim'
+    Plug 'morhetz/gruvbox'
     Plug 'tpope/vim-fugitive' "Git Wrapper for nvim
+    Plug 'jose-elias-alvarez/null-ls.nvim'
 
     " NerdTree plugins
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight' "Syntax Highlighting for nerdtree
@@ -37,8 +39,8 @@ call plug#begin()
     Plug 'neovim/nvim-lspconfig' "To configure nvim LSP functionality to LSP servers
     Plug 'williamboman/nvim-lsp-installer' "To install LSPs
     
-
-
+    " For better window management
+    Plug 'akinsho/bufferline.nvim'
     " Status line
     Plug 'nvim-lualine/lualine.nvim'
     Plug 'kyazdani42/nvim-web-devicons'
@@ -49,4 +51,6 @@ call plug#begin()
 
     " Add git signs left to the buffer
     Plug 'lewis6991/gitsigns.nvim'
+
+    Plug 'akinsho/toggleterm.nvim'
 call plug#end()

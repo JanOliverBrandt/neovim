@@ -1,8 +1,16 @@
 lua << EOF
 local lsp_installer = require("nvim-lsp-installer")
 
+ function my_temp_attach(client, bufnr)
+    if client.name == "tsserver" then
+        client.resolved_capabilities.document_formatting = false
+    end
+end
+
 lsp_installer.on_server_ready(function(server)
-    local opts = {}
+    local opts = {
+        on_attach = my_temp_attach
+    }
     server:setup(opts)
 end)
 
