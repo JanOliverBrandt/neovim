@@ -7,7 +7,9 @@ endif
 
 call plug#begin()
    " Basic plugins
-    Plug 'preservim/nerdtree' "File Explorer Plugin
+    Plug 'kyazdani42/nvim-web-devicons' " for file icons
+    Plug 'kyazdani42/nvim-tree.lua'
+    " Plug 'preservim/nerdtree' "File Explorer Plugin
     Plug 'sonph/onehalf', { 'rtp': 'vim' } "Colorschme
     Plug 'olimorris/onedarkpro.nvim'
     Plug 'tpope/vim-fugitive' "Git Wrapper for nvim
