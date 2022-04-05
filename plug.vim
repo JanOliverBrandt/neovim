@@ -38,6 +38,8 @@ call plug#begin()
 
 " Nice addtional functionality
     Plug 'windwp/nvim-autopairs' " Handler for brackets, etc.
+    Plug 'ahmedkhalf/project.nvim' " Detect Projects and list / open them via Telescope 
+    Plug 'lukas-reineke/indent-blankline.nvim' " Show indenting lines
 
 " Code Snippet related
     Plug 'saadparwaiz1/cmp_luasnip' " Use snippets for Auto Completion
