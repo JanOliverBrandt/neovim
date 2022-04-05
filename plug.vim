@@ -36,6 +36,9 @@ call plug#begin()
     Plug 'hrsh7th/cmp-cmdline' " Use cmdline for Auto Completion
     Plug 'jose-elias-alvarez/null-ls.nvim' " Connect linter and formatter via LSP
 
+" Nice addtional functionality
+    Plug 'windwp/nvim-autopairs' " Handler for brackets, etc.
+
 " Code Snippet related
     Plug 'saadparwaiz1/cmp_luasnip' " Use snippets for Auto Completion
     Plug 'L3MON4D3/LuaSnip' " Code Snippets for lua
