@@ -37,6 +37,7 @@ call plug#begin()
     Plug 'jose-elias-alvarez/null-ls.nvim' " Connect linter and formatter via LSP
 
 " Nice addtional functionality
+    Plug 'goolord/alpha-nvim' " Vim opening menu
     Plug 'windwp/nvim-autopairs' " Handler for brackets, etc.
     Plug 'ahmedkhalf/project.nvim' " Detect Projects and list / open them via Telescope 
     Plug 'lukas-reineke/indent-blankline.nvim' " Show indenting lines

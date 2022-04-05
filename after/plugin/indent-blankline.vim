@@ -6,3 +6,6 @@ require("indent_blankline").setup {
     show_current_context_start = true,
 }
 EOF
+
+IndentBlanklineDisable
+nnoremap <C-i> :IndentBlanklineToggle<CR>
