@@ -6,51 +6,45 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 call plug#begin()
-   " Basic plugins
+
+" File related
+    Plug 'kyazdani42/nvim-tree.lua' " File Expolorer
     Plug 'kyazdani42/nvim-web-devicons' " for file icons
-    Plug 'kyazdani42/nvim-tree.lua'
-    " Plug 'preservim/nerdtree' "File Explorer Plugin
-    Plug 'sonph/onehalf', { 'rtp': 'vim' } "Colorschme
-    Plug 'olimorris/onedarkpro.nvim'
-    Plug 'morhetz/gruvbox'
-    Plug 'tpope/vim-fugitive' "Git Wrapper for nvim
-    Plug 'jose-elias-alvarez/null-ls.nvim'
-
-    " NerdTree plugins
-    Plug 'tiagofumo/vim-nerdtree-syntax-highlight' "Syntax Highlighting for nerdtree
-    Plug 'ryanoasis/vim-devicons' "Icons for nerdtree
-
-    " Fuzzy Finder Plugins
     Plug 'nvim-telescope/telescope.nvim' "Fuzzy finder for files, greps and buffers
     Plug 'nvim-lua/plenary.nvim' "Dependency of Telescope (contains lua functionality)
-
-    " Code Highlighting and Auto Completion
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} "Syntax Hightlihting for files
-    Plug 'hrsh7th/nvim-cmp'
-    Plug 'hrsh7th/cmp-nvim-lsp'
-    Plug 'hrsh7th/cmp-buffer'
-    Plug 'hrsh7th/cmp-path'
-    Plug 'hrsh7th/cmp-cmdline'
-    Plug 'saadparwaiz1/cmp_luasnip'
-    Plug 'L3MON4D3/LuaSnip'
-    Plug 'rafamadriz/friendly-snippets'
 
-   " Language Server Protocol Plugins and related
-    Plug 'neovim/nvim-lspconfig' "To configure nvim LSP functionality to LSP servers
+" Appearance
+    Plug 'sonph/onehalf', { 'rtp': 'vim' } "Colorschme like VS Code
+    Plug 'olimorris/onedarkpro.nvim' "Another Colorschime like VS Code
+    Plug 'morhetz/gruvbox' " Colorschme that is good for your eyes
+    Plug 'nvim-lualine/lualine.nvim' " Status Bar at the bottom
+    Plug 'kyazdani42/nvim-web-devicons' " Icons for lualine
+    Plug 'akinsho/bufferline.nvim' " Tabline for current buffers
+
+" Git related
+    Plug 'tpope/vim-fugitive' "Git Wrapper for nvim
+    Plug 'lewis6991/gitsigns.nvim' " Adds git signs left to the text
+
+" LSP and Auto Completion
     Plug 'williamboman/nvim-lsp-installer' "To install LSPs
-    
-    " For better window management
-    Plug 'akinsho/bufferline.nvim'
-    " Status line
-    Plug 'nvim-lualine/lualine.nvim'
-    Plug 'kyazdani42/nvim-web-devicons'
-    
-    " Add comfortable commenting functionality
-    Plug 'numToStr/Comment.nvim'
-    Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+    Plug 'neovim/nvim-lspconfig' "To configure nvim LSP functionality to LSP servers
+    Plug 'hrsh7th/cmp-nvim-lsp' " Use LSP for Auto Completion
+    Plug 'hrsh7th/nvim-cmp' " Auto Completion Plugin
+    Plug 'hrsh7th/cmp-buffer' " User text for Auto Completion
+    Plug 'hrsh7th/cmp-path' " Use paths for Auto Completion
+    Plug 'hrsh7th/cmp-cmdline' " Use cmdline for Auto Completion
+    Plug 'jose-elias-alvarez/null-ls.nvim' " Connect linter and formatter via LSP
 
-    " Add git signs left to the buffer
-    Plug 'lewis6991/gitsigns.nvim'
+" Code Snippet related
+    Plug 'saadparwaiz1/cmp_luasnip' " Use snippets for Auto Completion
+    Plug 'L3MON4D3/LuaSnip' " Code Snippets for lua
+    Plug 'rafamadriz/friendly-snippets' " General Snippets for coding
 
-    Plug 'akinsho/toggleterm.nvim'
+" Comments
+    Plug 'numToStr/Comment.nvim' " Better commenting
+    Plug 'JoosepAlviste/nvim-ts-context-commentstring' " Better commenting in combination with Comment.vim
+
+" Terminal related
+    Plug 'akinsho/toggleterm.nvim' " Toggle a terminal inside nvim
 call plug#end()

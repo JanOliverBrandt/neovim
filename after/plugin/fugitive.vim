@@ -1,3 +1,4 @@
+let mapleader=" "
 nmap <leader>gs :G<CR>
 nmap <leader>gc :G commit<CR>
 nmap <leader>gm :G merge 

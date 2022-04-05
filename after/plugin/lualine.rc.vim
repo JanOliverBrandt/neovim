@@ -1,3 +1,10 @@
+
+lua << END
+require('lualine').setup {
+  options = { theme  = 'onedarkpro' },
+}
+END
+
 " gray
 highlight! CmpItemAbbrDeprecated guibg=NONE gui=strikethrough guifg=#808080
 " blue

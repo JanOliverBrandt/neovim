@@ -1,3 +1,4 @@
+let mapleader=" "
 nnoremap <leader>b :NvimTreeToggle<CR>
 
 lua << EOF
@@ -37,6 +38,11 @@ end
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
+  actions = {
+    open_file = {
+      resize_window = true
+    }
+  },
   disable_netrw = true,
   hijack_netrw = true,
   pen_on_setup = false,
