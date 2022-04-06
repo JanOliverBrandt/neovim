@@ -1,3 +1,4 @@
+
 local lsp_installer = require("nvim-lsp-installer")
 
  function my_temp_attach(client, bufnr)
