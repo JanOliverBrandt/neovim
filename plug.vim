@@ -18,6 +18,7 @@ call plug#begin()
     Plug 'sonph/onehalf', { 'rtp': 'vim' } "Colorschme like VS Code
     Plug 'olimorris/onedarkpro.nvim' "Another Colorschime like VS Code
     Plug 'morhetz/gruvbox' " Colorschme that is good for your eyes
+    Plug 'LunarVim/onedarker.nvim' "Another colorscheme
     Plug 'nvim-lualine/lualine.nvim' " Status Bar at the bottom
     Plug 'kyazdani42/nvim-web-devicons' " Icons for lualine
     Plug 'akinsho/bufferline.nvim' " Tabline for current buffers

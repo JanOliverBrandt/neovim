@@ -1,3 +1,3 @@
-colorscheme onedarkpro
+colorscheme onedarker
 
 

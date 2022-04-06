@@ -1,7 +1,7 @@
 
 lua << END
 require('lualine').setup {
-  options = { theme  = 'onedarkpro' },
+  options = { theme  = 'onedarker' },
 }
 END
 

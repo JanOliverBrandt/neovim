@@ -12,8 +12,8 @@ set nu
 set relativenumber
 set showmatch
 set expandtab
-set shiftwidth=4
-set tabstop=4 softtabstop=4
+set shiftwidth=2
+set tabstop=2 softtabstop=2
 set nowrap
 set encoding=utf-8
 set noerrorbells
