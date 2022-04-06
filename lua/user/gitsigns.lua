@@ -1,10 +1,3 @@
-let mapleader=" "
-nnoremap <leader>p :Gitsigns preview_hunk<CR>
-
-
-
-lua<<EOF
- 
 require('gitsigns').setup {
   signs = {
     add          = {hl = 'GitSignsAdd'   , text = '│', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
@@ -46,4 +39,3 @@ require('gitsigns').setup {
     enable = false
   },
 }
-EOF

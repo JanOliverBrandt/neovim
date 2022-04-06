@@ -1,4 +1,3 @@
-lua << EOF
 local status_ok, alpha = pcall(require, "alpha")
 if not status_ok then
 	return
@@ -45,4 +44,3 @@ dashboard.opts.opts.noautocmd = true
 -- vim.cmd([[autocmd User AlphaReady echo 'ready']])
 alpha.setup(dashboard.opts)
 
-EOF

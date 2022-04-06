@@ -1,7 +1,3 @@
-let mapleader=" "
-nnoremap <leader>o :Telescope projects<CR>
-lua << EOF
-
 local status_ok, project = pcall(require, "project_nvim")
 if not status_ok then
 	return
@@ -50,4 +46,3 @@ if not tele_status_ok then
 end
 
 telescope.load_extension('projects')
-EOF
