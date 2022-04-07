@@ -1,4 +1,3 @@
-lua << EOF
 local status_ok, toggleterm = pcall(require, "toggleterm")
 if not status_ok then
 	return
@@ -69,4 +68,3 @@ local python = Terminal:new({ cmd = "python", hidden = true })
 function _PYTHON_TOGGLE()
 	python:toggle()
 end 
-EOF

@@ -1,4 +1,3 @@
-lua << EOF
 local status_ok, alpha = pcall(require, "alpha")
 if not status_ok then
 	return
@@ -27,11 +26,6 @@ dashboard.section.buttons.val = {
 }
 
 local function footer()
--- NOTE: requires the fortune-mod package to work
-	-- local handle = io.popen("fortune")
-	-- local fortune = handle:read("*a")
-	-- handle:close()
-	-- return fortune
 	return "Jan's nvim configuration"
 end
 
@@ -45,4 +39,3 @@ dashboard.opts.opts.noautocmd = true
 -- vim.cmd([[autocmd User AlphaReady echo 'ready']])
 alpha.setup(dashboard.opts)
 
-EOF

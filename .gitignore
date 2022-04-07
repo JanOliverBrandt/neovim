@@ -1,2 +1,4 @@
-undodir
+plugin/
 .DS_Store
+undodir/
+
