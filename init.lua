@@ -1,3 +1,4 @@
+require('user.plugins')
 require('user.options')
 require('user.vim-commands')
 require('user.keymaps')
