@@ -8,6 +8,8 @@
 git clone https://github.com/JanOliverBrandt/neovim ~/.config/nvim
 ```
 
-2. Start nvim and ignore errors
+2. Start nvim (if there are errors - ignore during the first start)
 
-3. Run :PlugInstall
+3. Packer should automatically install all Plugins
+
+4. Re-Start and enjoy
