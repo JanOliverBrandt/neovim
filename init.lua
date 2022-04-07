@@ -1,3 +1,4 @@
+require('user.options')
 require('user.vim-commands')
 require('user.keymaps')
 require('user.alpha-nvim')
