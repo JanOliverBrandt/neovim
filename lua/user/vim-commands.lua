@@ -5,6 +5,7 @@ vim.cmd('syntax enable')
 -- Custom vim commands
 vim.cmd('command RemoveCR execute \"s/^M$//\"')
 vim.cmd('command ToLinuxFile execute \"set ff=unix\"')
+vim.cmd('command Hover execute \":lua vim.lsp.buf.hover()<CR>\"')
 
 -- Colors of Autocompletion
 vim.cmd('highlight! CmpItemAbbrDeprecated guibg=NONE gui=strikethrough guifg=#808080')
