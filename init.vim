@@ -23,7 +23,6 @@ set undodir=~/.config/nvim/undodir
 set undofile
 set splitbelow
 set splitright
-
 syntax enable
 
 runtime ./plug.vim
